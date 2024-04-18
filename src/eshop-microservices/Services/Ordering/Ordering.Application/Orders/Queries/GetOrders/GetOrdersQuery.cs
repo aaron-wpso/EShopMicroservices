@@ -2,7 +2,7 @@
 
 namespace Ordering.Application.Orders.Queries.GetOrders;
 
-public record GetOrdersQuery(PaginatedRequest PaginatedRequest) 
+public record GetOrdersQuery(PaginationRequest PaginatedRequest) 
     : IQuery<GetOrdersResult>;
 
 public record GetOrdersResult(PaginatedResult<OrderDto> Orders);
